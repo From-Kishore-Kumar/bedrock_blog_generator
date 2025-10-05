@@ -1,0 +1,44 @@
+{
+  "info": {
+    "name": "Bedrock Blog Generator",
+    "_postman_id": "bedrock-blog-demo-id",
+    "description": "Generates blog posts using AWS Bedrock LLaMA3 via Lambda and API Gateway",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Blog",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topic\": \"The Future of Artificial Intelligence in Education\"\n}"
+        },
+        "url": {
+          "raw": "https://2ezcxq54af.execute-api.ap-south-1.amazonaws.com/dev/aws_app_bedrock",
+          "protocol": "https",
+          "host": [
+            "2ezcxq54af",
+            "execute-api",
+            "ap-south-1",
+            "amazonaws",
+            "com"
+          ],
+          "path": [
+            "dev",
+            "aws_app_bedrock"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
